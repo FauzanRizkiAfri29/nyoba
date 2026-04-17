@@ -7,3 +7,131 @@
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+<body>
+    <!-- Particle Background -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">PUBG MOBILE</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#image">Gallery</a></li>
+                <li><a href="#stream">Live</a></li>
+                <li><a href="#audio">Music</a></li>
+                <li><a href="#video">Highlights</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero fade-in">
+        <div class="hero-content">
+            <h1>WELCOME TO PUBG MOBILE</h1>
+            <p>Tempatnya para gamer sejati berkumpul!</p>
+            <a href="#image" class="cta-button">Explore Now</a>
+        </div>
+    </section>
+
+    <!-- IMAGE SECTION -->
+    <section id="image" class="fade-in">
+        <div class="image-section">
+            <h2>🏆 Tournament Gallery</h2>
+            <div class="image-container">
+                <!-- GANTI SRC INI DENGAN LINK GAMBAR KAMU -->
+                <img src="poster tim.jpeg" alt="Esports Tournament">
+            </div>
+            <p></p>
+        </div>
+    </section>
+
+    <!-- IFRAME SECTION -->
+    <section id="stream" class="fade-in">
+        <div class="iframe-section">
+            <h2>📺 Live Streaming</h2>
+            <div class="iframe-container">
+                <!-- GANTI SRC INI DENGAN EMBED LINK TWITCH/YOUTUBE -->
+                <iframe src="https://www.youtube.com/embed/GNYAidSz0zk?autoplay=1&mute=0&controls=1" allowfullscreen></iframe>
+            </div>
+            <p>Tonton pertandingan seru secara LIVE!</p>
+        </div>
+    </section>
+
+    <!-- AUDIO SECTION - 3 AUDIO CAROUSEL -->
+    <section id="audio" class="fade-in">
+        <div class="audio-section">
+            <h2>🎵 Game Soundtracks</h2>
+            <div class="carousel-container">
+                <div class="carousel" id="audioCarousel">
+                    <!-- AUDIO 1 - GANTI SRC DI SINI -->
+                    <div class="carousel-item active">
+                        <div class="audio-item">
+                            <h3>Nostalgia</h3>
+                            <audio controls>
+                                <source src="on my way.mp4" type="audio/mpeg">
+                                Browser tidak support audio.
+                            </audio>
+                        </div>
+                    </div>
+                    
+                    <!-- AUDIO 2 - GANTI SRC DI SINI -->
+                    <div class="carousel-item">
+                        <div class="audio-item">
+                            <h3>Sound ginjal bergoyang</h3>
+                            <audio controls>
+                                <source src="sound ginjal.mpeg" type="audio/mpeg">
+                                Browser tidak support audio.
+                            </audio>
+                        </div>
+                    </div>
+                    
+                    <!-- AUDIO 3 - GANTI SRC DI SINI -->
+                    <div class="carousel-item">
+                        <div class="audio-item">
+                            <h3>Moment and Clutch</h3>
+                            <audio controls>
+                                <source src="mbg.mp4" type="audio/mpeg">
+                                Browser tidak support audio.
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Audio Navigation -->
+                <div class="carousel-nav">
+                    <button class="nav-btn prev" onclick="changeAudio(-1)">❮</button>
+                    <span id="audioIndicator">1 / 3</span>
+                    <button class="nav-btn next" onclick="changeAudio(1)">❯</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VIDEO SECTION - 3 VIDEO CAROUSEL -->
+    <section id="video" class="fade-in">
+        <div class="video-section">
+            <h2>⚡ Epic Highlights</h2>
+            <div class="carousel-container">
+                <div class="carousel video-carousel" id="videoCarousel">
+                    <!-- VIDEO 1 - GANTI SRC DI SINI -->
+                    <div class="carousel-item active">
+                        <div class="video-item">
+                            <video controls preload="metadata">
+                                <source src="on mu .mp4" type="video/mp4">
+                                Browser tidak support video.
+                            </video>
+                            <h3>On my way PUBG mobile</h3>
+                        </div>
+                    </div>
+                    
+                    <!-- VIDEO 2 - GANTI SRC DI SINI -->
+                    <div class="carousel-item">
+                        <div class="video-item">
+                            <video controls preload="metadata">
+                                <source src="on my hd.mp4" type="video/mp4">
+                                Browser tidak support video.
+                            </video>
+                            <h3>Gun sound edit</h3>
+                        </div>
+                    </div>
